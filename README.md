@@ -3,9 +3,6 @@ LinkedInMailing
 Sends email to any Recruiter/Talent Acquisitionist with a copy of your resume and a small message from your LinkedIn network.
 It takes in your contact list from LinkedIn in .csv format, reusme copy, and the message in a text file.
 
-- Get your contact list from here: https://www.linkedin.com/people/export-settings
-- The message should replace the Recruiter's name tag with {Name}, his/her email with {Email}, and Company's name tag with {Company}
-
 ```
     usage: mail.py [-h] [-ex old_file] sender_list attach_path text_body
       
@@ -22,3 +19,8 @@ It takes in your contact list from LinkedIn in .csv format, reusme copy, and the
                             Compare new contact file with old and send the mail to
                             new ones only
 ```
+
+- Get your contact list from here: https://www.linkedin.com/people/export-settings
+- The message should replace the Recruiter's name tag with {Name}, his/her email with {Email}, and Company's name tag with {Company}
+- Example: mail.py /path/to/contacts.csv /path/to/myResume.pdf /path/to/myMessage.txt
+- The -ex flag takes in an old .csv file that you may have used earlier and compares it with the new one to just send the email to any new connections you have
