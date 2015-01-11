@@ -5,9 +5,8 @@ It takes in your contact list from LinkedIn in .csv format, reusme copy, and the
 
 - Get your contact list from here: https://www.linkedin.com/people/export-settings
 - The message should replace the Recruiter's name tag with {Name} and Company's name tag with {Company}
- 
 
-
+```
     usage: mail.py [-h] [-ex old_file] sender_list attach_path text_body
       
     Sends email with attachment to multiple recipients.
@@ -22,3 +21,4 @@ It takes in your contact list from LinkedIn in .csv format, reusme copy, and the
         -ex old_file, --exclude old_file
                             Compare new contact file with old and send the mail to
                             new ones only
+```
