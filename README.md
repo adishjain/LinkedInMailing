@@ -24,3 +24,5 @@ It takes in your contact list from LinkedIn in .csv format, reusme copy, and the
 - The message should replace the Recruiter's name tag with {Name}, Company's name tag with {Company}, and your name as {User}
 - Example: mail.py /path/to/contacts.csv /path/to/myResume.pdf /path/to/myMessage.txt
 - The -ex flag takes in an old .csv file that you may have used earlier and compares it with the new one to just send the email to any new connections you have
+
+**Update:** with the new security changes from Google, you'd have to turn on the less secure apps options from your account to run this script. Turn it on from, https://www.google.com/settings/security/lesssecureapps.
